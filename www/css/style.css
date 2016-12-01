@@ -1,0 +1,78 @@
+
+
+.title{
+    padding: 0px;
+    background-color: #FF7C00;
+    font-family: Impact;
+    text-align: center;
+}
+
+#bar{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.tempo-atual, .tempo-previsao{
+    border: 4px solid;
+    border-radius: 5px;
+    border-color:#FF8C00;
+    background-color: #FFE4B5;
+
+}
+.cabeca{
+    border-bottom: 2px solid;
+    font-family: Impact;
+}
+
+#cidade{
+    text-align:center;
+}
+
+#condicao{
+    text-align: center;
+}
+#atual, #min, #max, #umidade{
+    text-align:center;
+    color: white;
+}
+
+#barra{
+    border: 2px solid;
+    border-color: #FF7C00;
+    background-color: #FFE4B5;
+}
+#pesquisa, #favs{
+    background-color: #FF7C00;
+    border-color: #FF7C00;
+}
+
+.info{
+    background-color: #FFA500;
+    border-color:  #FFA500;
+}
+
+.modal-header{
+    background-color: #FFA500;
+}
+
+.modal-content{
+    border: 2px solid;
+    border-color: #FFA500;
+    background-color: #FFE4B5;
+}
+
+.modal-header{
+    font-family: Impact;
+}
+#header-1, #header-2, #header-3, #header-4, #header-5{
+    text-align: center;
+}
+
+#botao, #limpar{
+    width: 100%;
+    background: #363636;
+    border-bottom: solid 1px;
+    border-radius: 0px;
+    border-color: white;
+    
+}

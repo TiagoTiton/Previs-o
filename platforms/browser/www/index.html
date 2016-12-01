@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previsão do Tempo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/menu.css" >
+    
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><h4 id="drop-cabe">Menu<h4></li>
+                <div class="dropdown" id="drop-content">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="botao">Favoritas
+                      <span class="caret"></span></button>
+                      <ul class="dropdown-menu" id="drop">
+                      </ul>
+                </div>
+                <button class="btn btn-primary" type="button" data-toggle="dropdown" id="limpar">Limpar</button>
+            </ul>
+        </div>
+		
+        <div id="page-content-wrapper">
+    	<div class="row title">
+                <div class="col-xs-1" id="menu_icon">
+                    <a href="#" id="menu-toggle"><span id=main_icon class="glyphicon glyphicon-align-justify"></span></a>
+                </div>
+                <div class="col-xs-11">
+                    <h4 id="teste">Previsão do tempo</h4>
+                </div>
+        </div>
+        <div class="container">
+            
+            <div class="row atual">
+
+              <div class="col-xs-10 col-xs-offset-1">
+                <div class="input-group" id="bar">
+                  <input type="text" class="form-control" placeholder="Digite o nome da cidade" id="barra">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="pesquisa" data-toggle="modal" data-target=".modal1">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-default" type="button" id="favs">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="col-xs-12 tempo-atual">
+              </div>
+            </div>
+
+            <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="meumodal" aria-hidden="true" id="meumodal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Deseja ver:</h4>
+                        </div>
+                        <div class="modal-body">
+    	                    <button type="button" class="btn btn-primary btn-lg btn-block info" id="amodal"> Condição atual </button>
+    	                    <button type="button" class="btn btn-primary btn-lg btn-block info" id="pmodal"> Previsão para 5 dias </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row previsao">
+                
+            </div>
+
+        		<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" id="header-1"></div>
+                            <div class="modal-body" id="body-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" id="header-2"></div>
+                            <div class="modal-body" id="body-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" id="header-3"></div>
+                            <div class="modal-body" id="body-3"></div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" id="header-4"></div>
+                            <div class="modal-body" id="body-4"></div>
+                        </div>
+                    </div>
+                </div> 
+                
+
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-previsao" aria-hidden="true" id="modal-previsao-5">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" id="header-5"></div>
+                            <div class="modal-body" id="body-5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="cordova.js"></script>
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/lokijs.min.js"></script>
+    <script srct="js/jquery-2.2.4.js"></script>
+    
+
+</body>
+</html>
+
